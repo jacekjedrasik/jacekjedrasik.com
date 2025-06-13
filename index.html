@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Jacek Jędrasik aka Yen Droll</title> 
+  <title>Jacek Jędrasik aka Yen Droll</title>
   <title>composer, producer, sound artist</title>
   <link rel="shortcut icon" href="images/favicon.jpg">
   <meta name="referrer" content="same-origin">
@@ -47,7 +47,7 @@
           }
           t.addEventListener
             ? t.addEventListener("load", e)
-            : t.attachEvent && t.attachEvent("onload", e);
+            : t.attachEvent && t.detachEvent("onload", e);
           setTimeout(function () { t.rel = "stylesheet"; t.media = "nl x" });
           setTimeout(e, 3e3);
         })(o);
@@ -59,6 +59,7 @@
       background-color: #000 !important;
       color: #fff     !important;
       color: #1DB954  !important;
+  }
   </style>
 </head>
 
@@ -99,15 +100,15 @@
         <p class="p2">
           <span class="f12"><a href="mailto:jedrasikjacek@gmail.com">jedrasikjacek@gmail.com</a></span>
         </p>
+        <!-- Tutaj dodajemy link do Spotify pod adresem e-mail -->
+        <p class="p2">
+          <a href="https://open.spotify.com/track/4UT1e6EvP5UHIuTGixYFBy?si=5c10d2891f49469a"
+             target="_blank" style="color: #1DB954; text-decoration: none;">
+            🎵 Spotify
+          </a>
+        </p>
       </div>
     </div>
   </div>
-
-  <footer style="position: fixed; bottom: 0; width: 100%; text-align: center; padding: 10px; background-color: #111; color: white;">
-    <a href="https://open.spotify.com/track/4UT1e6EvP5UHIuTGixYFBy?si=5c10d2891f49469a"
-       target="_blank" style="color: #1DB954; text-decoration: none;">
-      🎵 Spotify
-    </a>
-  </footer>
 </body>
 </html>
